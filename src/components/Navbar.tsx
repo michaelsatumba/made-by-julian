@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 function Navbar() {
-	const [display, setDisplay] = useState(true);
+	const [display, setDisplay] = useState(false);
 
 	return (
 		<div>
