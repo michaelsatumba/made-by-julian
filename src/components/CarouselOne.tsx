@@ -7,17 +7,17 @@ const Carousel = () => {
 		{
 			id: 1,
 			title: 'Slide 1',
-			backgroundColor: 'bg-red-500',
+			imageUrl: '/images/jackNtheBox.jpeg',
 		},
 		{
 			id: 2,
 			title: 'Slide 2',
-			backgroundColor: 'bg-blue-500',
+			imageUrl: '/images/yolondas.jpeg',
 		},
 		{
 			id: 3,
 			title: 'Slide 3',
-			backgroundColor: 'bg-green-500',
+			imageUrl: '/images/gymWJulian.jpeg',
 		},
 	];
 
@@ -38,17 +38,19 @@ const Carousel = () => {
 
 	return (
 		<div className="w-full h-64">
-			<div className={`h-64 ${slides[currentIndex].backgroundColor}`}>
+			<div className="h-64">
+				<img src={slides[currentIndex].imageUrl} alt={slides[currentIndex].title} className="w-full h-full" />
 				<h3 className="text-white">{slides[currentIndex].title}</h3>
 			</div>
-			<div className="flex justify-between">
-				<button className="bg-gray-300 px-4 py-2" onClick={handlePrev}>
-					Prev
-				</button>
-				<button className="bg-gray-300 px-4 py-2" onClick={handleNext}>
-					Next
-				</button>
-			</div>
+			<div className="flex justify-center space-x-32 mt-4">
+  <button className="bg-gray-300 px-4 py-2" onClick={handlePrev}>
+    Prev
+  </button>
+  <button className="bg-gray-300 px-4 py-2" onClick={handleNext}>
+    Next
+  </button>
+</div>
+
 		</div>
 	);
 };
