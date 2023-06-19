@@ -21,7 +21,7 @@ function Contact() {
         </li>
       </ul>
       <p>
-        Feel free to contact me for any inquiries, collaborations, or questions you may have. We'll get back to you as soon as possible.
+        Feel free to contact me for any inquiries, collaborations, or questions you may have. We&apos;ll get back to you as soon as possible.
       </p>
     </div>
   );
