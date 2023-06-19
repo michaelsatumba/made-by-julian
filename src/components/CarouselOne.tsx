@@ -39,7 +39,7 @@ const Carousel = () => {
 	return (
 		<div className="w-full h-64">
 			<div className="h-64">
-				<img src={slides[currentIndex].imageUrl} alt={slides[currentIndex].title} className="w-full h-full" />
+				<img src={slides[currentIndex].imageUrl} alt={slides[currentIndex].title} className="w-full h-full object-cover" />
 				<h3 className="text-white">{slides[currentIndex].title}</h3>
 			</div>
 			<div className="flex justify-center space-x-32 mt-4">
